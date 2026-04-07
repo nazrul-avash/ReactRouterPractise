@@ -1,14 +1,16 @@
 
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import Frame from './Frame'
 import NavBar from './NavBar'
 import SideBar from './SideBar'
+import RootLayOut from './RootLayOut';
 
 
 function App() {
   const router = createBrowserRouter([
     {
+      index: true,
       path: "/",
       element: <RootLayOut></RootLayOut>
       
