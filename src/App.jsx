@@ -18,19 +18,15 @@ function App() {
       element: <RootLayOut></RootLayOut>
       
     },
-    {
-      path: "/sidebar",
-      element: <SideBar></SideBar>
-    },
+   
     {
       path: "/frame",
-      element: <Frame></Frame>,
-     
-    }
-    ,{
-      path:"/frame/window",
-      element:<Window></Window>,
+      element: <RootLayOut></RootLayOut>,
       children:[
+       {
+        path:"window",
+        element:null,
+        children:[
         {
           index:true,
           element:<Home></Home>
@@ -40,7 +36,11 @@ function App() {
           element:<About></About>
         }
       ]
+       }
+      ]
+     
     }
+   
     
   ]);
 
