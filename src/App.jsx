@@ -8,6 +8,7 @@ import RootLayOut from './RootLayOut';
 import Home from './Home';
 import Window from './Window';
 import About from './About';
+import Contact from './Contact';
 
 
 function App() {
@@ -34,6 +35,18 @@ function App() {
         {
           path:"about",
           element:<About></About>
+        },
+         {
+          path:"contact",
+          element:<Contact></Contact>
+        },
+         {
+          path:"info",
+          element:<Info></Info>
+        },
+         {
+          path:"address",
+          element:<Address></Address>
         }
       ]
        }
